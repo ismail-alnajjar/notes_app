@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/item/CustomTextField.dart';
 import 'package:notes_app/widget/ApparCustom.dart';
 
 class EditorNotesView extends StatelessWidget {
@@ -6,18 +7,28 @@ class EditorNotesView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16),
+        padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 60,
             ),
-            ApparCustom(
+            const ApparCustom(
               title: 'Edit Notes',
               icon: Icons.check,
             ),
+            const SizedBox(
+              height: 50,
+            ),
+            CustomTextField(
+              hint: 'Title',
+            ),
+            CustomTextField(
+              hint: 'Content',
+              max: 5,
+            )
           ],
         ),
       ),
