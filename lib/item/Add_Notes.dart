@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/item/CustomBotton.dart';
 import 'package:notes_app/item/TextField.dart';
 
 class addNotes extends StatelessWidget {
@@ -6,14 +7,17 @@ class addNotes extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const SizedBox(
-          height: 24,
-        ),
-        CustomTextField(hint: 'Title'),
-        CustomTextField(hint: 'Contant', max: 5),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          const SizedBox(
+            height: 24,
+          ),
+          CustomTextField(hint: 'Title'),
+          CustomTextField(hint: 'Contant', max: 5),
+          CustomBotton(),
+        ],
+      ),
     );
   }
 }
