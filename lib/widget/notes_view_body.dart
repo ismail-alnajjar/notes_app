@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:notes_app/item/NotesListView.dart';
 import 'package:notes_app/view/EditorNotesView.dart';
 import 'package:notes_app/widget/ApparCustom.dart';
@@ -23,7 +24,7 @@ class NotesViewBody extends StatelessWidget {
             ),
             ApparCustom(
               title: 'Notes',
-              icon: Icons.search,
+              icon: FontAwesomeIcons.search,
             ),
             Expanded(child: Noteslistview()),
           ],

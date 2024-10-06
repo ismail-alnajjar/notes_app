@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:notes_app/item/CustomTextField.dart';
 import 'package:notes_app/widget/ApparCustom.dart';
 
@@ -15,9 +16,9 @@ class EditorNotesView extends StatelessWidget {
             const SizedBox(
               height: 60,
             ),
-            const ApparCustom(
+            ApparCustom(
               title: 'Edit Notes',
-              icon: Icons.check,
+              icon: FontAwesomeIcons.check,
             ),
             const SizedBox(
               height: 50,
