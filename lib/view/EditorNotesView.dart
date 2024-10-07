@@ -16,7 +16,7 @@ class EditorNotesView extends StatelessWidget {
             const SizedBox(
               height: 60,
             ),
-            ApparCustom(
+            const ApparCustom(
               title: 'Edit Notes',
               icon: FontAwesomeIcons.check,
             ),
