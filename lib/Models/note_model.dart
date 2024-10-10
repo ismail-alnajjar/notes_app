@@ -2,8 +2,8 @@ import 'package:hive/hive.dart';
 
 part 'note_model.g.dart';
 
-@HiveType(typeId: 1)
-class note_model extends HiveObject {
+@HiveType(typeId: 0)
+class NoteModel extends HiveObject {
   @HiveField(0)
   final String title;
   @HiveField(1)
@@ -13,7 +13,7 @@ class note_model extends HiveObject {
   @HiveField(3)
   final int color;
 
-  note_model(
+  NoteModel(
       {required this.title,
       required this.subtitle,
       required this.Data,
